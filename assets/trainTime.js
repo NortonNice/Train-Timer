@@ -1,3 +1,4 @@
+alert("linked");
 var trainRef = firebase.database().ref("trains/");
 
 trainRef.set ({
