@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/trainTime.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCXQiVLrqlyMFkoc8DxhCik6hM5fvvc_w4",
+        authDomain: "traintimeteller.firebaseapp.com",
+        databaseURL: "https://traintimeteller.firebaseio.com",
+        projectId: "traintimeteller",
+        storageBucket: "",
+        messagingSenderId: "1019222834798"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="assets/trainTime.js"></script>
+    <title>Ride That Train!</title>
+</head>
+
+<body>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Link to Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- Main Container-->
+    <div class="container">
+        <div id="jumboRow" class="row">
+            <div class="col-sm-2"></div>
+            <div id="jumboCol" class="col-sm-8">
+                <div class="col-sm-2"></div>
+                <div class="jumbotron">
+                    <h2 id="jumboHead">Come on, ride that train!</h2>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Ariving In</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <form id="addTrainForm">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Train Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Enter Train Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Destination</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="City or State">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">First Train Time</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="HH:MM">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Frequency (In Minutes)</label>
+                                <input type="text" class="form-control form-control" id="exampleInputPassword1"
+                                    placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+</body>
+
+
+
+</html>
